@@ -2,11 +2,6 @@ import pandas as pd
 import pandas.io.data
 import datetime
 
-tech_stocks = ('AAPL', 'MSFT', 'GOOG', 'FB', 'TSLA',)
-bank_stocks = ('WFC', 'JPM', 'C', 'BAC', 'BBT',)
-food_stocks = ('JJSF', 'TSN', 'GIS', 'HRL', 'MJN',)
-cybersec_stocks = ('PANW', 'FTNT', 'SYMC', 'CSCO', 'CHKP',)
-
 # Apple Computers
 AAPL = pd.io.data.get_data_yahoo('AAPL',
                                  start=datetime.datetime(2000, 7, 1),
