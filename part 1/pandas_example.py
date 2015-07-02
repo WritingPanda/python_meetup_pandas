@@ -1,0 +1,66 @@
+import pandas as pd
+import pandas.io.data
+import datetime
+
+tech_stocks = ('AAPL', 'MSFT', 'GOOG', 'FB', 'TSLA',)
+bank_stocks = ('WFC', 'JPM', 'C', 'BAC', 'BBT',)
+food_stocks = ('JJSF', 'TSN', 'GIS', 'HRL', 'MJN',)
+cybersec_stocks = ('PANW', 'FTNT', 'SYMC', 'CSCO', 'CHKP',)
+
+APPL = pd.io.data.get_data_yahoo('APPL',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+MSFT = pd.io.data.get_data_yahoo('MSFT',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+GOOG = pd.io.data.get_data_yahoo('GOOG',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+TSLA = pd.io.data.get_data_yahoo('TSLA',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+WFC = pd.io.data.get_data_yahoo('WFC',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+JPM = pd.io.data.get_data_yahoo('JPM',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+C = pd.io.data.get_data_yahoo('C',
+                              start=datetime.datetime(2000, 7, 1),
+                              end=datetime.datetime(2015, 7, 1))
+BAC = pd.io.data.get_data_yahoo('BAC',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+BBT = pd.io.data.get_data_yahoo('BBT',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+JJSF = pd.io.data.get_data_yahoo('JJSF',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+TSN = pd.io.data.get_data_yahoo('',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+GIS = pd.io.data.get_data_yahoo('TSN',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+HRL = pd.io.data.get_data_yahoo('HRL',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+MJN = pd.io.data.get_data_yahoo('MJN',
+                                start=datetime.datetime(2000, 7, 1),
+                                end=datetime.datetime(2015, 7, 1))
+PANW = pd.io.data.get_data_yahoo('PANW',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+FTNT = pd.io.data.get_data_yahoo('FTNT',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+SYMC = pd.io.data.get_data_yahoo('SYMC',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+CSCO = pd.io.data.get_data_yahoo('CSCO',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
+CHKP = pd.io.data.get_data_yahoo('CHKP',
+                                 start=datetime.datetime(2000, 7, 1),
+                                 end=datetime.datetime(2015, 7, 1))
